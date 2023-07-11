@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Ewert&family=Merienda&family=Nunito:wght@200;300;400;500;600&family=Oleo+Script&family=Philosopher:ital,wght@1,700&family=Rajdhani:wght@700&family=Roboto+Mono&family=Roboto:wght@300&family=Rye&family=Sancreek&family=Shrikhand&family=Supermercado+One&family=Yeseva+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+:root {
+    --main-color: #be9c79;
+    --black: #333;
+    --white: #fff;
+    --light-color: #666;
+    --border: .1rem solid var(var(--black));
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+header{
+    position: sticky;
+    top: 0;
+}
+.navContainer{
+    box-shadow: var(--box-shadow);
+    
+}
+nav {
+    height: 13vh;
+    background-color: var(--white);
+    /* box-shadow: var(--box-shadow); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo {
+    height: 50px;
+    padding: 0 0 0 11rem;
+}
+
+.logo img {
+    height: 80%;
+
+}
+
+.navLinks {
+    display: flex;
+    align-items: center;
+    width: 35%;
+    justify-content: space-around;
+    margin-right: 15rem;
+}
+
+.navLinks li {
+    list-style-type: none;
+}
+
+.navLinks a {
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    color: var(--black)
+}
+
+.navLinks a:hover {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.heroSection {
+    background-color: var(--main-color);
+    background-image: linear-gradient(90deg, var(--white), transparent 70%), url(./images/home-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+}
+
+.content {
+    height: 90%;
+    width: 60%;
+    padding: 170px 150px 230px 70px;
+    text-align: center;
+}
+
+.content h1 {
+    font-family: 'Merienda', cursive;
+    font-size: 60px;
+}
+
+.content p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    line-height: 2;
+    padding: 10px;
+    color: var(--light-color);
+}
+
+.content button {
+    padding: 10px 30px;
+    background-color: var(--main-color);
+    border: none;
+}
+
+.content button a {
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    color: #fff;
+    font-size: 18px;
+
+}
+
+.content button:hover {
+    background-color: black;
+}
+.about{
+    /* height: 100vh; */
+    /* background-color: #be9c79; */
+    display: flex;
+    padding-top: 30px;
+}
+.text{
+   
+    height: 100%;
+    width: 90%;
+    padding: 120px 100px 170px 70px;
+}
+.text h3{
+    font-family: 'Merienda', cursive;
+    font-size: 45px;
+    
+}
+.text p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    line-height: 2;
+    padding: 10px 0;
+    color: var(--light-color);
+}
+.text button{
+    padding: 10px 30px;
+    background-color: var(--main-color);
+    border: none;
+    
+}
+.text button a{
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    color: #fff;
+    font-size: 18px;
+}
+.text button:hover{
+background-color: var(--black);
+}
+
+.image{
+    height:35rem;
+    padding:  0 0 0 50px;
+}
+.image img{
+     height: 100%;
+}
+.heading{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.heading h3{
+    font-family: 'Merienda', cursive;
+    font-size: 40px;
+    
+}
+.facility .box-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(auto-fill,minmax(220px,1fr)) ;
+    gap: 1rem;
+    padding: 10px 130px;
+
+}
+.box-container .box{
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    line-height: 2;
+}
+.box-container .box h3{
+    font: size 20px;
+}
+.box-container .box p{
+    font-size: 15px;
+    color: var(--light-color);
+}
+.heading img{
+    height: 35px;
+}
+.popular-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(auto-fill,minmax(300px,1fr)) ;
+    gap: 1rem;
+    justify-items: center;
+    padding:30px 150px ;
+    text-align: center;
+
+}
+.popular-container h3{
+    color: var(--black);
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+.gallery-container{
+    display: grid;
+    grid-template-columns:repeat(auto-fill,minmax(250px,1fr)) ;
+    text-align: center;
+    justify-items: center;
+    gap: 1rem;
+    padding: 30px 150px;
+    width: 100%;
+}
+.gall img{
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    width: 100%;
+}
+.team-container{
+    display: grid;
+    grid-template-columns:repeat(auto-fill,minmax(250px,1fr)) ;
+    text-align: center;
+    justify-items: center;
+    gap: 1rem;
+    padding: 30px 150px;
+    width: 100%;
+}
+.contain img{
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    width: 100%;
+}
+.contain p{
+    padding: 10px;
+    font-size: 20px;
+    color: var(--black);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.checkButton {
+    color: #333;
+    font-size: 25px;
+    display: none;
+    margin-right: 15px;
+}
+
+#check {
+    display: none;
+}
+
+@media(max-width:576px) {
+    .logo {
+        padding: 0 0 0 15px;
+    }
+
+    .navLinks {
+        display: none;
+        background-color: var(--white);
+        position: absolute;
+        top: 70px;
+        flex-direction: column;
+        display: none;
+        height: 300px;
+        width: 100%;
+    }
+    .navLinks li{
+        background-color:var(--white) ;
+        height: 23%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .navLinks li:hover{
+        background-color: var(--main-color);
+    }
+
+    .checkButton {
+        display: block;
+    }
+    #check:checked~.navLinks{
+        display: flex;
+    }
+
+    .content{
+        width: 100%;
+    }
+    .content h1{
+          font-size: 35px;
+    }
+    .content p{
+        font-size: 14px;
+    
+    }
+    .about{
+        flex-direction: column;
+        
+    }
+     .image{
+        padding: 0;
+        height: 25rem;
+        display: flex;
+        justify-content: center;
+    }
+    .text{
+        padding: 0px 10px;
+        width: 100%;
+    }
+    .text h3{
+        font-size: 26px;
+    }
+    .text p{
+        font-size: 14px;
+    }
+    .facility .heading{
+        padding: 20px  0;
+    }
+    .facility .box-container{
+        padding: 0 100px ;
+    }
+    .popular-container{
+        padding: 0;
+    }
+    .gallery-container {
+        padding:  10px 100px;
+    }
+    .gallery .heading{
+        padding: 30px 0;
+    }
+    .team-container{
+        padding:10px  100px;
+    }
+    .team .heading{
+        padding: 30px 0;
+    }
+}
